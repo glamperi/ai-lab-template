@@ -3,7 +3,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: chatbot-gl
-  title: Chatbot Application GL1
+  title: Chatbot Application GL2
   description: Build your own Large Language Model (LLM)-enabled chat application. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
   annotations:
