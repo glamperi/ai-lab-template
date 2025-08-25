@@ -3,7 +3,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: chatbot-gl
-  title: Chatbot Application GL2
+  title: Chatbot Application GL3
   description: Build your own Large Language Model (LLM)-enabled chat application. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
   annotations:
@@ -54,19 +54,19 @@ spec:
           type: string
           description: The target namespace of the ArgoCD deployment
           default: janus-argocd
-          maxLength: 100
+          maxLength: 50
         argoInstance:
           title: ArgoCD Instance
           type: string
           description: The target ArgoCD instance name
-          default: argocd-server-janus-argocd.apps.cluster-vwnpf.vwnpf.sandbox2841.opentlc.com
-          maxLength: 100
+          default: main
+          maxLength: 50
         argoProject:
           title: ArgoCD Project
           type: string
           description: The target ArgoCD project name
           default: default
-          maxLength: 100
+          maxLength: 50
         includeArgoLabel:
           title: Include ArgoCD App Label?
           type: boolean
