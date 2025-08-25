@@ -2,7 +2,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: chatbot
+  name: chatbot-gl
   title: Chatbot Application GL1
   description: Build your own Large Language Model (LLM)-enabled chat application. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
@@ -54,19 +54,19 @@ spec:
           type: string
           description: The target namespace of the ArgoCD deployment
           default: ai-rhdh
-          maxLength: 63
+          maxLength: 100
         argoInstance:
           title: ArgoCD Instance
           type: string
           description: The target ArgoCD instance name
           default: argocd-server-janus-argocd.apps.cluster-vwnpf.vwnpf.sandbox2841.opentlc.com
-          maxLength: 63
+          maxLength: 100
         argoProject:
           title: ArgoCD Project
           type: string
           description: The target ArgoCD project name
           default: default
-          maxLength: 63
+          maxLength: 100
         includeArgoLabel:
           title: Include ArgoCD App Label?
           type: boolean
