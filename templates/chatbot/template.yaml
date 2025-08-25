@@ -41,7 +41,7 @@ spec:
           ui:options:
             rows: 5
           ui:field: EntityNamePicker
-          maxLength: 63
+          maxLength: 100
         owner:
           title: Owner
           type: string
