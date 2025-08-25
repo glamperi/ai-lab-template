@@ -53,7 +53,7 @@ spec:
           title: ArgoCD Namespace
           type: string
           description: The target namespace of the ArgoCD deployment
-          default: ai-rhdh
+          default: janus-argocd
           maxLength: 100
         argoInstance:
           title: ArgoCD Instance
