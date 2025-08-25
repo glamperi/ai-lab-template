@@ -59,7 +59,7 @@ spec:
           title: ArgoCD Instance
           type: string
           description: The target ArgoCD instance name
-          default: default
+          default: argocd-server-janus-argocd.apps.cluster-vwnpf.vwnpf.sandbox2841.opentlc.com
           maxLength: 63
         argoProject:
           title: ArgoCD Project
