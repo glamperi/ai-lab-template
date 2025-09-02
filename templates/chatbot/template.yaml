@@ -3,7 +3,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: chatbot-gl
-  title: Chatbot Application GL3
+  title: Chatbot Application GL4
   description: Build your own Large Language Model (LLM)-enabled chat application. Pick from the model servers available or bring your own.
   tags: ["ai", "llamacpp", "vllm", "python"]
   annotations:
@@ -371,7 +371,7 @@ spec:
           appName: ${{ parameters.name }}-gitops # for now just use the component name, since it's single component app
           description: This is GitOps manifest for ${{ parameters.name }}
           namespace: ${{ parameters.namespace }}
-          rhdhNamespace: ai-rhdh
+          rhdhNamespace: backstage
           # example: github.com?owner=<owner>&repo=<srcRepo>, the gitops repo name will be <srcRepo>-gitops
           repoURL: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}-gitops
           srcRepoURL: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}
